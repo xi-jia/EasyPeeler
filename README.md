@@ -111,22 +111,22 @@ The **Abdomen-CT–MR** task was evaluated using intra-subject cross-modality re
 
 ### Dataset-Specific Training Configurations
 
-The following table summarizes the training configurations used in our experiments. All models employed diffusion regularization, with dataset-specific regularization weights (\(\lambda\)).
+The following table summarizes the training configurations used in our experiments. All models employed diffusion regularization, with dataset-specific regularization weights \lambda.
 
-| Dataset | \(C_g\) | Similarity metric | \(\lambda\) | Epochs |
-|---|---:|---|---:|---:|
-| Fluo-N2DH-GOWT1 | 36 | MSE | Model-specific¹ | 500 |
-| ACDC | 32 | MSE | 0.01 | 500 |
-| OASIS-1 | 48 | MSE | 0.005 | 10² |
-| MindBoggle-101 | 32 | MSE | 0.05 | 500 |
-| Lung-CT | 32 | MSE | 0.001 | 500³ |
-| Abdomen-CT | 32 | LNCC | 1.0 | 500 |
-| BCV-CT | 32 | LNCC | 1.0 | 500 |
-| CHAOS-MR | 32 | MSE | 0.05 | 500 |
-| BCV–CHAOS | 32 | MI | 0.5 | 500 |
-| Abdomen-CT–MR | 32 | MI + MIND | 0.105 | 500 |
+| Dataset | C_g | Similarity metric | \lambda | Epochs | Trained Weights |
+|---|---:|---|---:|---:|---:|
+| Fluo-N2DH-GOWT1 | 36 | MSE | Model-specific¹ | 500 | [Link](https://drive.google.com/drive/folders/159_x3zVNYWoy9e056T8sZNAt-zWVFtuB?usp=drive_link) |
+| ACDC | 32 | MSE | 0.01 | 500 | [Link](https://drive.google.com/drive/folders/1bBoTkp5bsj_6joQpsOOwHBTSdwVSscd3?usp=drive_link) |
+| OASIS-1 | 48 | MSE | 0.005 | 10² | [Link](https://drive.google.com/drive/folders/16q742DeROdkYg8wDtx1bU0FGeX_E-1F_) |
+| MindBoggle-101 | 32 | MSE | 0.05 | 500 | [Link](https://drive.google.com/drive/folders/1Zbg-vsYWWHtuW9zV1qyCR_8cuFlIEmYi?usp=drive_link) |
+| Lung-CT | 32 | MSE | 0.001 | 500³ | [Link](https://drive.google.com/drive/folders/1GaUNjM4hseievRyYPjOC7WLVWlhnpEJ7?usp=sharing) |
+| Abdomen-CT | 32 | LNCC | 1.0 | 500 | [Link](https://drive.google.com/drive/folders/167Jz2e4uIzcBA_idUW8uubxW8t2AaCYy?usp=sharing) |
+| BCV-CT | 32 | LNCC | 1.0 | 500 | [Link](https://drive.google.com/drive/folders/1PUX0uz7kdxXjUg4TIrJvp0SB54zhkhEn?usp=sharing) |
+| CHAOS-MR | 32 | MSE | 0.05 | 500 | [Link](https://drive.google.com/drive/folders/1AoKMHMs-qJMmOdbWbDlUY4TGRa0Y0S8i?usp=sharing) |
+| BCV–CHAOS | 32 | MI | 0.5 | 500 | [Link](https://drive.google.com/drive/folders/166QK_pf_knibq74Bq8yhXxHdm6Xl5ZTQ?usp=sharing) |
+| Abdomen-CT–MR | 32 | MI + MIND | 0.105 | 500 | [Link](https://drive.google.com/drive/folders/11Dc3m_KAT1xe0GZH3kfpYTkqs7n6zLuj?usp=sharing) |
 
-Here, \(C_g\) denotes the channel dimensionality of the feature representations \(g^{\mathrm{ins}}_M\), \(g^{\mathrm{str}}_M\), \(g^{\mathrm{ins}}_F\), and \(g^{\mathrm{str}}_F\).
+Here, C_g denotes the channel dimensionality of the feature representations \(g^{\mathrm{ins}}_M\), \(g^{\mathrm{str}}_M\), \(g^{\mathrm{ins}}_F\), and \(g^{\mathrm{str}}_F\).
 
 **Additional training details:**
 
